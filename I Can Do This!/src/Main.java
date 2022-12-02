@@ -20,12 +20,12 @@ public class Main {
 			
 			
 			
-			System.out.println("Pick an array size");
+			System.out.println("Pick an array size, and dont just say yes");
 			int size = in.nextInt();
 			
 			double[] temp = new double [size];
 			
-			System.out.println("Pick the doubles");
+			System.out.println("Pick the doubles,if not go fish");
 			int n = temp.length;
 			int b = 0;
 			
@@ -95,7 +95,7 @@ public class Main {
 		} else if (choice == 3) {
 			System.out.println("You selected Operators");
 
-			System.out.println("Enter a number:");
+			System.out.println("Enter a number, At your own danger:");
 			int x = in.nextInt();
 			int temp = x;
 			x = x - 1;
@@ -115,7 +115,7 @@ public class Main {
 			int O5 = x;
 			x = x - temp;
 			System.out.println(O5 + "-" + temp + "=" + x);
-			System.out.println("It comes out to 8");
+			System.out.println("It comes out to 4 + 4");
 		}
 
 		else if (choice == 4)
@@ -144,7 +144,7 @@ public class Main {
 		else if (choice == 5) {
 			System.out.println("You selected Selection");
 			
-			System.out.println("Please enter a number");
+			System.out.println("Please enter a number, If you Dare >:)");
 			int num = in.nextInt();
 			double T = 0;
 			double rem = 0;
@@ -183,7 +183,9 @@ public class Main {
 			System.out.println("You selected Sub-Programs");
 			
 			
-		} else if (choice == 7) {
+		}
+		
+		else if (choice == 7) {
 			System.out.println("You selected Variables");
 		}
 
