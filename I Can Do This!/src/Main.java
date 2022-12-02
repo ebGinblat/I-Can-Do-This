@@ -17,7 +17,68 @@ public class Main {
 		int choice = in.nextInt();
 		if (choice == 1) {
 			System.out.println("You selected Arrays!");
+			
+			
+			
+			System.out.println("Pick an array size");
+			int size = in.nextInt();
+			
+			double[] temp = new double [size];
+			
+			System.out.println("Pick the doubles");
+			int n = temp.length;
+			int b = 0;
+			
+			for (int i=0;i<n;i++) {
+					double a = in.nextDouble();
+					temp[b]=a;
+					b++;	
+			}
+			
+			double max = 0;
+			
+			for (int i=0;i<n-1;i++) {
+				
+				if (temp[i]>=temp[i+1]) {
+					max = temp[i];
+				}
+				else {
+					max = temp[i+1];
+				}
+			}
+			
+			double min = 0;
+			
+			for (int i=0;i<n-1;i++) {
+				
+				if (temp[i]<=temp[i+1]) {
+					min = temp[i];
+				}
+				else {
+					min = temp[i+1];
+				}
+			}
+			
+			double average = 0;
+			
+			for (int i=0;i<n-1;i++) {
+				average = temp[i]+temp[i+1];
+				
+			}
+			
+			
+			
+			System.out.println("The maximum of your number is: "+max);
+			System.out.println("The minimum of your nunmber is: "+min);
+			System.out.println("The average of your nunber is: "+average);
+
+			
+			in.close();
+		
+		
+		
 		}
+	
 
 		else if (choice == 2) {
 			System.out.println("You selected Nested");
@@ -82,8 +143,46 @@ public class Main {
 		}
 		else if (choice == 5) {
 			System.out.println("You selected Selection");
-		} else if (choice == 6) {
+			
+			System.out.println("Please enter a number");
+			int num = in.nextInt();
+			double T = 0;
+			double rem = 0;
+			
+			double T15=0;
+			double T205=0;
+			double T26=0;
+			double T29=0;
+			double T33=0;
+			
+			if (num <=49020) {
+				T15 = num * 0.15;
+				rem = num-T15;
+				
+				if (rem >49020 && rem <=98040) {
+					
+				
+				}
+				
+				else {
+					
+				}
+				
+				
+			}
+			
+			
+			T = T15 + T205+T26+T29+T33;
+			System.out.println(T);
+			
+			in.close();
+		
+		} 
+		
+		else if (choice == 6) {
 			System.out.println("You selected Sub-Programs");
+			
+			
 		} else if (choice == 7) {
 			System.out.println("You selected Variables");
 		}
